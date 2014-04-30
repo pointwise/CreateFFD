@@ -21,7 +21,7 @@ name should be of the following format: **ffd-name-scale-dimension**.
     Example group name (please note the format): ffd-wing-1.2,1.2,1.2-4,5,2
     Short group name format (will use defaults): ffd-wing
 
-![ScriptImage](https://raw.github.com/pointwise/CreateFFD/master/Group.png)
+![ScriptImage](https://raw.github.com/pointwise/CreateFFD/master/Groups.png)
 
 Grids created in 2D for SU2 must be in the z-plane. Therefore, when running
 in 2D, only x,y compenents of the scale vector and dimension are used. Also,
