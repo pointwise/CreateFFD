@@ -12,7 +12,7 @@
 # ============================================================================
 # Written by: Travis Carrigan, Senior Engineer, Pointwise Inc.
 #
-# This script will generate an FFD box for use with Stanford's SU2 solver. The
+# This script will generate FFD boxes for use with Stanford's SU2 solver. The
 # boxes are constructed using the extents of grouped connectors (2D) or domains
 # (3D). The group names are parsed for the parameters necessary to generate the
 # box. Each box is assigned a layer to help the user declutter the display and
