@@ -4,19 +4,19 @@ This script will generate FFD boxes for use with Stanford's SU2 solver. The
 boxes are constructed using the extents of grouped connectors (2D) or domains
 (3D). The group names are parsed for the parameters necessary to generate the
 box. Each box is assigned a layer to help the user declutter the display and
-make it easier for the data to be written to the .su2 grid.
+make it easier for the data to be written to the .su2 grid file.
 
 ![ScriptImage](https://raw.github.com/pointwise/CreateFFD/master/Grid.png)
 
 To create a group, select the entities and go to *Create, Group*. The group
 name should be of the following format: **ffd-name-scale-dimension**.
 
-|Parameter    |Description                                                 |
-|:------------|:-----------------------------------------------------------|
-|*ffd*:       |Tag to let script know the group will be used for an FFD box|
-|*name*:      |The name of the FFD box                                     |
-|*scale*:     |The x,y,z scale vector for the box scaling (default=1.2)    |
-|*dimension*: |Polynomial degree in the i,j,k directions (>=1, default=1)  |
+|Parameter   |Description                                                 |
+|:-----------|:-----------------------------------------------------------|
+|*ffd*       |Tag to let script know the group will be used for an FFD box|
+|*name*      |The name of the FFD box                                     |
+|*scale*     |The x,y,z scale vector for the box scaling (default=1.2)    |
+|*dimension* |Polynomial degree in the i,j,k directions (>=1, default=1)  |
 
     Example group name (please note the format): ffd-wing-1.2,1.2,1.2-4,5,2
     Short group name format (will use defaults): ffd-wing
@@ -35,7 +35,7 @@ the user can transform the box using the Edit, Transform menu. These points
 can be used as anchor points during various transformations.
 
 When the script is run it will check to see if there are any *FFD Layers*
-where an FFD layer is a layer with a description of the form: FFD - XXX.
+where an FFD layer is a layer with a description of the form: *FFD - XXX*.
 The script will then ensure that all *FFD groups* have been used to create
 their respective FFD boxes and layers. Lastly, the script will export all
 FFD boxes to a file containing all necessary FFD information for SU2. The
